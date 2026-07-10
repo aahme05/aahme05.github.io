@@ -345,6 +345,23 @@ html[data-theme="light"] .theme-toggle .icon-sun { display: block; }
 }
 .about-copy p { margin-bottom: 16px; font-size: 1rem; }
 
+.about-bullets { display: flex; flex-direction: column; gap: 18px; }
+.about-bullets li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+.about-bullets li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--text-faint);
+  font-size: 0.95em;
+}
+
 .about-photo {
   position: relative;
   border-radius: var(--radius);
